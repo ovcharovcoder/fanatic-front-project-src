@@ -6,16 +6,25 @@ body {
 	height: 100%;
 }
 
-// .wrapper {
-// 	min-height: 100%;
-// 	display: flex;
-// 	flex-direction: column;
-// }
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
 
 .main {
 	flex-grow: 1;
 }
 // END/ Glue footer to the bottom
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+p + p {
+	margin-top: 0;
+}
 
 body {
 	font-family: 'Inter', sans-serif;
@@ -29,6 +38,14 @@ body {
 	max-width: 1230px;
 	margin: 0 auto;
 	padding: 0 0.9375rem; // 0 15px
+}
+
+.title {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 // font-family: 'Comfortaa', sans-serif;
