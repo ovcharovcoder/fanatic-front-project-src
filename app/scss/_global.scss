@@ -1,0 +1,34 @@
+// Global styles */
+
+// Glue footer to the bottom
+html,
+body {
+	height: 100%;
+}
+
+// .wrapper {
+// 	min-height: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+.main {
+	flex-grow: 1;
+}
+// END/ Glue footer to the bottom
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	color: $defaultColor;
+	line-height: normal;
+}
+
+.container {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 0.9375rem; // 0 15px
+}
+
+// font-family: 'Comfortaa', sans-serif;
