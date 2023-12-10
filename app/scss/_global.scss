@@ -36,19 +36,44 @@ body {
 	padding: 0 0.9375rem; // 0 15px
 }
 
+img {
+	object-fit: cover;
+}
+
 .btn {
 	font-family: 'Comfortaa', sans-serif;
 	text-transform: uppercase;
 	border: none;
 	cursor: pointer;
+	transition: all 0.3x ease;
 }
+.popup-btn {
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	position: absolute;
 
+	&:hover path {
+		fill: $greenColor;
+	}
+	&:hover circle {
+		stroke: $greenColor;
+	}
+	&:hover span {
+		color: $blueColor;
+	}
+}
 .title {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 60px;
 	font-style: normal;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+
+ol.technology__list {
+	list-style-type: decimal;
 }
 
 // font-family: 'Comfortaa', sans-serif;
