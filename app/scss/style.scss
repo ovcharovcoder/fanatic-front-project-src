@@ -272,6 +272,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		transition: transform 0.3s;
+		// Object enlarges on hover
+		&:hover {
+			transform: scale(1.2);
+		}
 	}
 }
 // END/ section Info
@@ -418,6 +423,83 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+	}
+}
+// section END/ Technology
+
+.footer {
+	padding-top: 100px;
+	background-color: $defaultColor;
+	color: $whiteColor;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		margin-bottom: 27px;
+	}
+	&__form {
+		max-width: 500px;
+	}
+	&__form-input {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid $greyColor;
+		display: block;
+		width: 100%;
+		padding: 10px 10px 10px 0;
+		margin-bottom: 57px;
+		color: $whiteColor;
+		&::placeholder {
+			color: $greyColor;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+	&__form-btn {
+		background-color: $whiteColor;
+		color: #000;
+		border: none;
+		margin-bottom: 110px;
+		font-family: 'Comfortaa', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 10px 66px;
+		cursor: pointer;
+	}
+	&__social-title,
+	&__menu-list {
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__social-title {
+		margin-bottom: 28px;
+	}
+	&__social-gallery {
+		display: grid;
+		gap: 52px;
+		grid-template-columns: repeat(4, 1fr);
+		margin-bottom: 50px;
+	}
+	&__gallery-img {
+		object-fit: cover;
+		width: 260px;
+		height: 260px;
+	}
+	&__menu-list {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo {
+		align-self: flex-start;
+	}
+	&__logo path {
+		transition: fill 0.3s;
+	}
+	&__logo:hover path {
+		fill: $blueColor;
 	}
 }
 

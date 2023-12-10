@@ -40,6 +40,7 @@ img {
 	object-fit: cover;
 }
 
+// Button
 .btn {
 	font-family: 'Comfortaa', sans-serif;
 	text-transform: uppercase;
@@ -47,13 +48,24 @@ img {
 	cursor: pointer;
 	transition: all 0.3x ease;
 }
+
+// Popup button
 .popup-btn {
 	text-align: center;
 	border: none;
 	cursor: pointer;
 	background-color: transparent;
 	position: absolute;
-
+	& span {
+		padding-top: 12px;
+		display: block;
+		color: $whiteColor;
+		transition: color 0.3s;
+	}
+	& path,
+	& circle {
+		transition: all 0.3s;
+	}
 	&:hover path {
 		fill: $greenColor;
 	}
@@ -64,6 +76,7 @@ img {
 		color: $blueColor;
 	}
 }
+
 .title {
 	font-family: 'Comfortaa', sans-serif;
 	font-size: 60px;
@@ -75,5 +88,3 @@ img {
 ol.technology__list {
 	list-style-type: decimal;
 }
-
-// font-family: 'Comfortaa', sans-serif;
