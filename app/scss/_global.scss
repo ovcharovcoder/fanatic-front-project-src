@@ -24,7 +24,7 @@ ul {
 
 body {
 	font-family: 'Inter', sans-serif;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 400;
 	color: $defaultColor;
 	line-height: normal;
@@ -57,7 +57,7 @@ img {
 	background-color: transparent;
 	position: absolute;
 	& span {
-		padding-top: 12px;
+		padding-top: 0.75rem;
 		display: block;
 		color: $whiteColor;
 		transition: color 0.3s;
@@ -79,7 +79,7 @@ img {
 
 .title {
 	font-family: 'Comfortaa', sans-serif;
-	font-size: 60px;
+	font-size: 3.75rem;
 	font-style: normal;
 	font-weight: 400;
 	text-transform: uppercase;

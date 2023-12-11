@@ -1,18 +1,291 @@
 // Styles for adaptive
 
-/* 
-This is a consistent responsive website model
-
-.section_1,
-.section_2,
-.section_3,  {
-   display: none;
-*/ 
-
-
-// 1300px
-/*
-@media (max-width: 1300px) {
-
+@media (max-width: 1230px) {
+	.header__decor-text--2 {
+		left: 0;
+	}
+	.buy {
+		&__inner {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__img {
+			order: -1;
+		}
+		&__content {
+			flex-basis: 100%;
+		}
+		&__price {
+			pointer-events: none;
+		}
+		&__list {
+			max-width: 600px;
+			width: 100%;
+		}
+	}
+	.technology {
+		&__gallery-max {
+			grid-template-columns: 1fr 2fr 1fr;
+			grid-template-rows: auto auto auto;
+			width: 100%;
+		}
+		&__gallery-max-img {
+			width: 100%;
+			align-self: stretch;
+		}
+	}
+	.footer {
+		&__gallery-img {
+			width: 100%;
+			align-self: stretch;
+		}
+	}
 }
-*/
+
+@media (max-width: 1175px) {
+	.technology {
+		&__gallery-box {
+			flex-wrap: wrap;
+		}
+		&__gallery-min {
+			margin-top: 0;
+		}
+		&__gallery-text {
+			width: 100%;
+		}
+		&__gallery-min-img {
+			width: 100%;
+			align-self: stretch;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.info {
+		&__top {
+			display: block;
+		}
+		&__top-item {
+			padding-top: 13.75rem;
+		}
+		&__top-text {
+			width: 100%;
+			padding-top: 5.625rem;
+		}
+		&__top-btn {
+			bottom: -2.6875rem;
+			left: 0;
+		}
+
+		&__top-img {
+			display: block;
+			margin: 0 auto;
+			width: 227px;
+		}
+		&__specs {
+			display: block;
+		}
+	}
+	.footer {
+		&__top {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		&__logo {
+			display: inline-block;
+			order: -1;
+			margin: 0 auto 3.125rem;
+		}
+		&__social-gallery {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+		}
+		&__menu-list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.25rem;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 870px) {
+	.header {
+		&__decor-text--2 {
+			bottom: -10.625rem;
+		}
+	}
+
+	.buy {
+		&__price {
+			top: -300px;
+			bottom: auto;
+		}
+		&__img {
+			max-width: 100%;
+		}
+	}
+	.technology {
+		&__gallery-min {
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: auto auto;
+			width: 100%;
+			margin-bottom: 3.125rem;
+		}
+		&__gallery-max-text {
+			border-radius: 0;
+			font-size: 1.125rem;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.technology__btn {
+		left: 0;
+		right: 0;
+		top: 34vh;
+	}
+}
+
+@media (max-width: 720px) {
+	.header {
+		&__top {
+			justify-content: center;
+			gap: 1.875rem 5.625rem;
+		}
+		&__btn {
+			width: 70%;
+		}
+		&__content-box {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 630px) {
+	.info {
+		&__specs-list {
+			width: 100%;
+		}
+		&__specs-item {
+			display: block;
+		}
+		&__top {
+			margin-bottom: 15vh;
+		}
+		&__top-img {
+			padding-top: 2.5rem;
+		}
+	}
+	.title {
+		font-size: 48px;
+	}
+	.technology__gallery-min {
+		padding: 1.25rem 0.625rem;
+		&::before {
+			border-radius: 200px 0px 155px 0px;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	.header {
+		&__decor-text {
+		}
+		&__decor-text--1,
+		&__decor-text--2,
+		&__decor-text--3 {
+			right: 0;
+			left: 0;
+			text-align: center;
+		}
+		&__decor-text--3 {
+			bottom: -11px;
+			margin: 0 auto;
+		}
+	}
+	.buy__price {
+		width: 170px;
+		height: 168px;
+		top: -185px;
+	}
+	.footer {
+		&__menu-list {
+			grid-template-columns: 1fr;
+		}
+		&__social-title {
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 414px) {
+	.header {
+		&__content,
+		&__decor-text--1 {
+			z-index: 5;
+		}
+	}
+	.technology {
+		&__gallery-min,
+		&__gallery-max {
+			gap: 0.625rem;
+			&__title {
+				font-size: 2.125rem;
+			}
+		}
+	}
+	.footer {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 380px) {
+	.technology {
+		&__top-inner {
+			min-height: 130vh;
+		}
+		&__top-box {
+			position: absolute;
+			left: 0;
+			bottom: 11px;
+		}
+		&__btn {
+			top: 40vh;
+		}
+	}
+}
+
+@media (max-width: 390px) {
+	.header {
+		&__decor-text {
+		}
+		&__decor-text--1,
+		&__decor-text--2 {
+			font-size: 5rem;
+		}
+		&__decor-text--3 {
+			bottom: -58px;
+		}
+	}
+	.footer {
+		&__title {
+			font-size: 2.375rem;
+		}
+		&__logo svg {
+			width: 90%;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.header {
+		&__title {
+			font-size: 3.4375rem;
+		}
+	}
+	.technology__gallery-min {
+		padding: 1.25rem;
+	}
+}
