@@ -1,4 +1,4 @@
-# fanatic-project-src
+<h1>Open Source for Fanatic Project</h1>
 <h2>Project Description</h2>
 <b>Development Date: 12.12.2023</b>
 <h3>Brief description:</h3>
